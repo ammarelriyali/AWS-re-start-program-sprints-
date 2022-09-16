@@ -1,0 +1,1 @@
+ cat /etc/passwd  | awk '{split($0,a,":");  print a[1],a[3],a[5]}'|awk 'BEGIN{a=   0}{ a=a+$2} END{print a}'   
